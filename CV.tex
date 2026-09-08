@@ -1,0 +1,97 @@
+
+\documentclass[10pt,a4paper]{article}
+\usepackage{fontspec}
+\usepackage[russian]{babel}
+\setmainfont{Times New Roman} 
+\usepackage[left=1.8cm,right=1.8cm,top=1.8cm,bottom=1.8cm]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+
+
+\definecolor{primary}{RGB}{128, 0, 32}  
+\definecolor{accent}{RGB}{236, 64, 122}     
+\definecolor{subtext}{RGB}{180, 80, 110}      
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=accent,
+    filecolor=accent,      
+    urlcolor=accent,
+}
+
+
+\setlist[itemize]{leftmargin=*,itemsep=2pt,topsep=2pt}
+\pagestyle{empty}
+\usepackage{tikz}
+
+\newcommand{\linedsection}[1]{%
+  \vspace{10pt}%
+  \noindent
+  {\bfseries\Large\color{primary} #1}%
+  \par\vspace{3pt}%
+  {{\color{primary}\hrule height 1pt}}
+  \par\vspace{6pt}%
+  \noindent
+}
+
+
+
+\begin{document}
+
+% --- ШАПКА И КОНТАКТЫ ---
+\begin{center}
+    {\Huge \bfseries \color{primary} Кира Кошелева} \\[6pt]
+    {\large Студентка 2 курса · Специальность 14.05.04 «Электроника и автоматика физических установок»} \\[4pt]
+    \small 
+    Email: \href{mailto:kosheleva.kir@yandex.ru}{kosheleva.kir@yandex.ru} \quad$\cdot$\quad 
+    Telegram: \href{https://t.me/koshelz}{@koshelz} \quad$\cdot$\quad 
+    GitHub: \href{https://github.com/koshelz}{koshelz} \quad$\cdot$\quad 
+    GitLab: \href{https://gitlab.com/koshelz}{koshelz} 
+\end{center}
+
+\vspace{-6pt}
+{\color{primary}\hrule height 1pt}
+\vspace{6pt}
+
+% --- ОБРАЗОВАНИЕ ---
+\linedsection{ОБРАЗОВАНИЕ}
+\vspace{2pt}
+\textbf{\large НИЯУ МИФИ} \hfill \textcolor{subtext}{2025 -- 2031 (в процессе)} \\
+\textit{Направление: Технологии наноэлектронных приборов и архитектура вычислительных систем} \\
+\small {Средний балл:} 5.0 / 5.0
+
+% --- ТЕХНИЧЕСКИЕ НАВЫКИ ---
+\linedsection{ТЕХНИЧЕСКИЕ НАВЫКИ}
+\begin{itemize}
+    \item \textbf{Языки программирования:} C/C++, Python (реализация алгоритмов, обработка данных).
+    \item \textbf{Инструменты и ПО:} LaTeX, VS Code.
+    \item \textbf{Иностранные языки:} Русский (родной), Английский (чтение технической документации).
+\end{itemize}
+
+% --- ПРОЕКТНАЯ ДЕЯТЕЛЬНОСТЬ ---
+\linedsection{ПРОЕКТНАЯ ДЕЯТЕЛЬНОСТЬ}
+\vspace{2pt}
+\textbf{\large Станок автоматической для намотки катушек} \hfill \textcolor{subtext}{2026} \\
+\textit{Роль: Инженер-программист встроенных систем} \quad $\cdot$ \quad \href{https://gitlab.com/sstund/winding-machine}{\textbf{GitLab}}
+\begin{itemize}
+    \item Проектирование и отладка ПО: объединение аппаратных узлов (приводы, интерфейс) и веб-интерфейса в единую систему.
+    \item Разработка веб-сервиса удалённого управления для беспроводного ввода параметров намотки через локальную сеть.
+    \item Результат: Призовое место (\href{https://gitlab.com/sstund/winding-machine/-/blob/main/2026-05-15_001.jpg}{\color{accent}Диплом призера}) на научной конференции.
+\end{itemize}
+
+
+% --- НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ И ПУБЛИКАЦИИ ---
+\linedsection{НАУЧНАЯ ДЕЯТЕЛЬНОСТЬ И ПУБЛИКАЦИИ}
+\vspace{2pt}
+{\large \textbf{Наноэлектронные датчики для мониторинга элементов железобетонных конструкций}} \hfill \textcolor{subtext}{2026} \\
+\small{Научно-аналитический обзор · Участие с докладом на конференциях:}
+\begin{itemize}
+    \item \href{https://github.com/koshelz/my-CV/blob/main/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D0%92%D0%BE%D0%93%D0%A3.pdf}{\color{accent}Международная научная конференция «Молодые исследователи– регионам»}
+    \item \href{https://github.com/koshelz/my-CV/blob/main/%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%20%D1%81%20%D0%92%D0%9D%D0%A1%20%D0%A1%D0%9D%D0%9E.pdf}{\color{accent} Всероссийская весенняя научная сессия СНО НИЯУ МИФИ}
+\end{itemize}
+
+
+
+\end{document}
